@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#333333"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:src="@drawable/bg_escuro_transparente" />
+
+    <EditText
+        android:id="@+id/txt_art"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:hint=" Nome do artista"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txt_mus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:hint=" Nome da música"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_procurar"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#222222"
+        android:text="PROCURAR"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lst_resultados"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:background="#333333"
+        android:textIsSelectable="true"/>
+
+    <Button
+        android:id="@+id/btn_link"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:backgroundTint="#222222"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</LinearLayout>
